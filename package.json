@@ -1,7 +1,7 @@
 {
     "name": "minecraft-rcon",
     "version": "1.0.2",
-    "description": "node template",
+    "description": "rcon client for minecraft",
     "bin": {
         "rcon": "index.js"
     },
