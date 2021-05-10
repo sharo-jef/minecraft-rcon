@@ -1,6 +1,6 @@
 {
     "name": "minecraft-rcon",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "rcon client for minecraft",
     "bin": {
         "rcon": "index.js"
