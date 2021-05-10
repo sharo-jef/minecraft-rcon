@@ -27,9 +27,9 @@ const argv = yargs(hideBin(process.argv))
         alias: ['t'],
         type: 'number',
     })
-    .positional('host', {
+    .positional('id', {
         type: 'string',
-        desc: 'host address or identifier decleared in ~/.config/rcon.json',
+        desc: 'host address or identifier declared in ~/.config/rcon.json',
     })
     .argv;
 
