@@ -40,7 +40,9 @@ const config = {
     password: '',
     timeout: 5000,
 };
-
+if (configData.default) {
+    Object.assign(config, configData.default);
+}
 if (argv._.length > 0) {
     Object.assign(config, configData[argv._[0]]);
 }
@@ -66,7 +68,7 @@ const rcon = new Rcon(config);
 rl.on('line', async line => {
     if (/^exit$/.test(line)) {
         rl.close();
-        return;
+        process.exit(0);
     }
     console.log(await rcon.send(line));
     rl.prompt();
